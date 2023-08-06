@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+  }
+  .head > h4 {
+    font-family: "Metrophobic";
+    color: #007f61;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+  }
+  .head > h4:before {
+    content: "";
+    display: block;
+    width: 93px;
+    height: 0.5px;
+    background: #c8c8c8;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .head > h4:after {
+    content: "";
+    display: block;
+    width: 93px;
+    height: 1px;
+    background: #c8c8c8;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  /* first box styling */
+  .box {
+    border-radius: 3.615px;
+    border: 0.904px solid #c8c8c8;
+    margin-top: 30px;
+    padding: 15px 15px;
+  }
+  .inside-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .radio-input {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .radio-input > input {
+    margin-right: 15px;
+  }
+  input[type=radio] {
+    accent-color: #007f61;
+  }
+  .info > .pair {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Metrophobic";
+  }
+  .info > .price {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Metrophobic";
+  }
+  .discount > span {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Metrophobic";
+  }
+  
+  /* styling second box */
+  .second-box-inside {
+    display: flex;
+    justify-content: space-between;
+  }
+  .middle-price > span {
+    position: relative;
+    top: 14px;
+    font-size: 10px;
+    text-decoration: line-through;
+    color: #9f9f9f;
+    text-decoration-color: #9f9f9f;
+  }
+  .second-box-discount > h4 {
+    font-size: 14px;
+    color: #007f61;
+    font-weight: bold;
+    font-family: "Inter";
+  }
+  .second-box-discount > span {
+    margin-left: 25px;
+  }
+  .selection {
+    padding: 0 5px;
+    margin-top: 10px;
+    display: none;
+  }
+  .labels {
+    display: flex;
+    justify-content: start;
+  }
+  .labels h1 {
+    font-size: 12px;
+    margin-left: 20px;
+    font-family: "Inter";
+  }
+  .labels h1:nth-child(2) {
+    margin-left: 45px;
+  }
+  .size-colour {
+    margin-top: 10px;
+  }
+  .size-colour span {
+    font-family: "Inter";
+    font-size: 12px;
+  }
+  .size-colour select {
+    border-radius: 1.808px;
+    border: 0.904px solid #d9d9d9;
+    width: 70px;
+    height: 25px;
+  }
+  
+  /* fourth section */
+  .fourth-sec {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fourth-sec > .shipping {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Inter";
+    color: #007f61;
+  }
+  .fourth-sec > .total {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Inter";
+  }
+  
+  /* fifth section */
+  .button {
+    width: 100%;
+    background-color: #007f61;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 3px;
+  }
+  .button > button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  /* sixth section */
+  .copyright {
+    text-align: right;
+  }
+  .copyright > h2 {
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .container {
+      width: 250px;
+    }
+    .fourth-sec > .shipping {
+      font-size: 10px;
+    }
+    .fourth-sec > .total {
+      font-size: 10px;
+    }
+  
+    .head > h4 {
+      font-size: 14px;
+    }
+    .head > h4:before {
+      width: 58px;
+    }
+    .head > h4:after {
+      width: 58px;
+    }
+    .middle-price > span {
+      font-size: 8px;
+    }
+    .second-box-discount > h4 {
+      font-size: 10px;
+    }
+    .second-box-discount > span {
+      margin-left: 22px;
+      font-size: 10px;
+    }
+  
+    .info > .pair {
+      font-size: 10px;
+    }
+    .info > .price {
+      font-size: 10px;
+    }
+    .discount > span {
+      font-size: 10px;
+    }
+  }
+  

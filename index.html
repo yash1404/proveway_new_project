@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Proveway Frontend Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Head section -->
+      <div class="head">
+        <h4>Bundle & Save</h4>
+      </div>
+      <!-- first box -->
+      <div class="box" id="box1">
+        <div class="inside-box">
+          <div class="radio-input">
+            <input type="radio" id="radioButton1" onchange="toggleSelection(1)" />
+            <div class="info">
+              <p class="pair">1 Pair</p>
+              <p class="price">DKK 195.00</p>
+            </div>
+          </div>
+          <div class="discount">
+            <span>50% OFF</span>
+          </div>
+        </div>
+
+        <!-- selection section -->
+        <div class="selection" id="selection1">
+          <!-- label -->
+          <div class="labels">
+            <h1>Size</h1>
+            <h1>Colour</h1>
+          </div>
+          <div class="size-colour">
+            <span>#1</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Color</option>
+            </select>
+          </div>
+          <div class="size-colour">
+            <span>#2</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- second box -->
+      <div class="box" id="box2">
+        <div class="second-box-inside">
+          <div class="radio-input">
+            <input type="radio" id="radioButton2" onchange="toggleSelection(2)" />
+            <div class="info">
+              <p class="pair">2 Pair</p>
+              <p class="price">DKK 345.00</p>
+            </div>
+          </div>
+          <div class="middle-price">
+            <span>DK 195.00</span>
+          </div>
+          <div class="discount second-box-discount">
+            <h4>Most Popular</h4>
+            <span>40% OFF</span>
+          </div>
+        </div>
+
+        <!-- selection section -->
+        <div class="selection" id="selection2">
+          <!-- label -->
+          <div class="labels">
+            <h1>Size</h1>
+            <h1>Colour</h1>
+          </div>
+          <div class="size-colour">
+            <span>#1</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Color</option>
+            </select>
+          </div>
+          <div class="size-colour">
+            <span>#2</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- third box -->
+      <div class="box" id="box3">
+        <div class="inside-box">
+          <div class="radio-input">
+            <input type="radio" id="radioButton3" onchange="toggleSelection(3)" />
+            <div class="info">
+              <p class="pair">3 Pair</p>
+              <p class="price">DKK 528.00</p>
+            </div>
+          </div>
+          <div class="discount">
+            <span>60% OFF</span>
+          </div>
+        </div>
+
+        <!-- selection section -->
+        <div class="selection" id="selection3">
+          <!-- label -->
+          <div class="labels">
+            <h1>Size</h1>
+            <h1>Colour</h1>
+          </div>
+          <div class="size-colour">
+            <span>#1</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Color</option>
+            </select>
+          </div>
+          <div class="size-colour">
+            <span>#2</span>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+            </select>
+            <select name="colour" id="size">
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+              <option value="colour">Colour</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- fourth section -->
+      <div class="fourth-sec">
+        <span class="shipping">Free 2 Day Shipping</span>
+        <span class="total">Total : DKK 360.00</span>
+      </div>
+      <!-- fifith section -->
+      <div class="button">
+        <button><span>+</span>Add to Cart</button>
+      </div>
+      <!-- sixth section -->
+      <div class="copyright">
+        <h2>&copy; Powered by Pumper</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
